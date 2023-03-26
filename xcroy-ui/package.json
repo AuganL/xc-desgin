@@ -1,0 +1,14 @@
+{
+    "name": "xc-desgin",
+    "version": "0.0.2",
+    "private": false,
+    "description": "组件库",
+    "main": "xcroyUi.js",
+    "type": "module",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": ["xc-desgin","xc-desgin-ui","vue3-xc-desgin-ui"],
+    "author": "",
+    "license": "ISC"
+  }
