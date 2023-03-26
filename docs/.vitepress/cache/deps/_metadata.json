@@ -1,0 +1,47 @@
+{
+  "hash": "9a94538e",
+  "browserHash": "caaa7cd0",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "35b8dfb7",
+      "needsInterop": false
+    },
+    "@vue/devtools-api": {
+      "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "@vue_devtools-api.js",
+      "fileHash": "1893ffd2",
+      "needsInterop": false
+    },
+    "element-plus": {
+      "src": "../../../../node_modules/element-plus/es/index.mjs",
+      "file": "element-plus.js",
+      "fileHash": "b05b160b",
+      "needsInterop": false
+    },
+    "@element-plus/icons-vue": {
+      "src": "../../../../node_modules/@element-plus/icons-vue/dist/index.js",
+      "file": "@element-plus_icons-vue.js",
+      "fileHash": "7c88d17a",
+      "needsInterop": false
+    },
+    "xc-desgin": {
+      "src": "../../../../node_modules/xc-desgin/xcroyUi.js",
+      "file": "xc-desgin.js",
+      "fileHash": "4f34f25f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-M34SYWA6": {
+      "file": "chunk-M34SYWA6.js"
+    },
+    "chunk-4S7LXNVO": {
+      "file": "chunk-4S7LXNVO.js"
+    },
+    "chunk-DFKQJ226": {
+      "file": "chunk-DFKQJ226.js"
+    }
+  }
+}

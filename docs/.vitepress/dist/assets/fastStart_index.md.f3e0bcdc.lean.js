@@ -1,0 +1,1 @@
+import{_ as s,h as n,i as a,O as l}from"./chunks/framework.1d3d0452.js";const C=JSON.parse('{"title":"快速开始","description":"","frontmatter":{},"headers":[],"relativePath":"fastStart/index.md"}'),p={name:"fastStart/index.md"},o=l("",8),e=[o];function t(c,r,D,y,i,F){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{C as __pageData,d as default};
