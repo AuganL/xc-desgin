@@ -214,7 +214,6 @@ export default {
           ...data,
         };
         let res = await listUpdate(params);
-        // console.log(res);
         this.getTableData();
         this.addModalVisible = false;
         res.data.code == "200"

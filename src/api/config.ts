@@ -3,6 +3,9 @@ export const API_CONFIG = {
     // user: {
     //     GET_DATA : base + '/user'
     // },
+    login : {
+        LOGIN : 'api/login'
+    },
     calendar: {
         GET_DATA: base + '/calendar',
         UP_DATA: base + '/calendar/update',

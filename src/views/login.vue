@@ -111,6 +111,7 @@
 </template>
 
 <script>
+import { login } from '../api/index'
 export default {
   data() {
     return {
@@ -165,9 +166,8 @@ export default {
       }
     },
     // 登录
-    submit() {
+    async submit() {
       // 判断当前的username 和 password 是否有空
-      if (this.flag === false) {
         if (this.username.length === 0 || this.password.length === 0) {
           if (this.username.length === 0 && this.password.length === 0) {
             this.usernameError = true;
@@ -184,31 +184,19 @@ export default {
         }
         this.news1 = "请输入账号";
         this.news2 = "请输入密码";
-      } else {
-        if (this.phone.length !== 11) {
-          if (this.phone.length === 0) {
-            this.news1 = "请输入手机号码";
-          } else if (this.phone.length !== 11) {
-            this.news1 = "手机格式错误";
-          }
-          this.phoneError = true;
-          return;
+        let params = {
+          username: this.username,
+          password: this.password
         }
-      }
-      let localStorageArray = JSON.parse(localStorage.getItem("UserArray"));
-      if (localStorageArray) {
-        localStorageArray.push(this.username);
-        localStorage.setItem("UserArray", JSON.stringify(localStorageArray));
-      } else {
-        let arr = [];
-        arr.push(this.username);
-        localStorage.setItem("UserArray", JSON.stringify(arr));
-      }
+        let res = await login(params)
+        if(res.data && res.data.code == 200) {
+          this.$router.push('table')
+        }
       //修改路由跳转 添加携带参数
-      this.$router.push({
-        name: "chat",
-      });
       // this.$router.push({
+      //   path: "table",
+      // });
+      // // this.$router.push({
       //   path: '/map',
       // });
     },

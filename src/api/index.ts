@@ -1,6 +1,9 @@
 import http from 'axios'
 import { API_CONFIG } from './config'
 
+// login
+async function login(params: any) {return await http.post(API_CONFIG.login.LOGIN,params)}
+
 // select
 async function calendar() { return await http.get(API_CONFIG.calendar.GET_DATA) }
 async function navigationMenu() { return await http.get(API_CONFIG.navigationMenu.GET_DATA) }
@@ -69,6 +72,9 @@ async function timeSelectorInsert(params: any) { return await http.post(API_CONF
 
 
 export {
+
+    login,
+    
     // select
     calendar,
     navigationMenu,
