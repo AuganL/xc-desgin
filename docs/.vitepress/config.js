@@ -9,7 +9,7 @@
 const { description } = require('../../package')
 
 module.exports = {
-  text: 'XC-Desgin-UI组件库API使用文档',
+  title: 'XC-Desgin-UI组件库API使用文档',
   description: description,
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -46,13 +46,13 @@ module.exports = {
     // 侧边导航
     sidebar:[
       {
-        text: '指南',   // 必要的
+        text: '介绍',   // 必要的
         link: '/intor/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
       },
       {
-        text: '组件',   // 必要的
+        text: '安装',   // 必要的
         link: '/packages/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
@@ -63,12 +63,12 @@ module.exports = {
         collapsable: false, 
         sidebarDepth: 1,    
       },
-      {
-        text: 'Icon 图标',  
-        link: '/Icon/',     
-        collapsable: false, 
-        sidebarDepth: 1,    
-      },
+      // {
+      //   text: 'Icon 图标',  
+      //   link: '/Icon/',     
+      //   collapsable: false, 
+      //   sidebarDepth: 1,    
+      // },
       {
         text: '省市区选择器',  
         link: '/provincialMunicipalSelector/',     
@@ -114,12 +114,14 @@ module.exports = {
         link: '/notificationMenu/',     
         collapsable: false, 
         sidebarDepth: 1,    
-      },{
-        text: '导航菜单',  
-        link: '/navigationMenu/',     
-        collapsable: false, 
-        sidebarDepth: 1,    
-      },{
+      },
+      // {
+      //   text: '导航菜单',  
+      //   link: '/navigationMenu/',     
+      //   collapsable: false, 
+      //   sidebarDepth: 1,    
+      // },
+      {
         text: '城市选择器',  
         link: '/citySelector/',     
         collapsable: false, 

@@ -537,3 +537,50 @@ let handleBeforeUpload = (val) => {
 ```
 
 </details>
+
+
+
+## 日历组件API
+
+### props
+
+| 属性 | 说明 | 类型 | 可选择 | 默认值 |
+| :-------------  | :-------------  | :------------- | :-------------  | :---------- |
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+| options	        |表单配置项 | Array as PropType<FormOptions[]>	 | 必填 | 必填属性 | 
+
+
+
+### 事件
+
+
+| 事件名 | 说明 | 参数 |
+| :-------------  | :-------------  | :------------- |
+| on-preview	  | 上传组件事件 | file |
+
+
+
