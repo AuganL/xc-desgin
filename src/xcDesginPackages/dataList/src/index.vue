@@ -53,7 +53,6 @@ const props = withDefaults(
     grid: false,
   }
 )
-
 const emits = defineEmits(["scroll", "reach-bottom"])
 
 const items = ref<any[]>([])
