@@ -16,7 +16,7 @@ const indexRouter = require('./routes/index');
 const login = require('./routes/login');
 const usersRouter = require('./routes/users');
 const components = require('./routes/components');
-
+const JWT = require('./util/jwt')
 const app = express();
 
 // view engine setup
@@ -29,10 +29,29 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/login',login);
 app.use('/components',components)
+
+app.use((res,req,next)=>{
+  if(res.url == "/login"){
+    next();
+    return
+  }
+  let token = req.headers['authorization'].split('')[1]
+  if(token){
+    if(JWT.verify(token)){
+      const newToken = JWT.generate(JWT.verify(token),'1000s')
+      res.headers('Authorization', newToken)
+      next()
+    }else{
+      res.status(401).json({
+        errCode:'-1',
+        errInfo:'token 过期'
+      })
+    }
+  }
+})
+
+app.use('/login',login);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

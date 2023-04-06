@@ -1,9 +1,13 @@
-const Base = require('./config/base');
+const knex = require('./config/knex');
 
-class User extends Base {
-  constructor(props = 'user'){
-    super(props);
+class user {
+  constructor(props){
+    this.table = props;
+  }
+  // 根据用户名查询用户信息
+  userByName(name){
+    return knex(this.table).select().where('username','=',name);
   }
 }
 
-module.exports = new User();
+module.exports = new user('user');
